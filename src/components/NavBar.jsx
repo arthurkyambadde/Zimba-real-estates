@@ -4,20 +4,22 @@ import styled from "styled-components";
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 63px 100px 39px 100px;
+  padding: 63px 200px 39px 200px;
+  background: #eeedde;
 `;
 
 const Logo = styled.h4`
   color: #203239;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 36px;
   cursor: pointer;
+  transform: scale(1.1);
 `;
 
 const NavList = styled.ul`
   display: flex;
   flex-direct: row;
-  gap: 8px;
+  gap: 100px;
 `;
 const NavListItem = styled.div`
   list-style: none;
@@ -27,9 +29,11 @@ const NavListItemButton = styled.button`
   border: none;
   background: none;
   cursor: pointer;
+  font-weight: 300;
+  font-size: 24px;
 
   &:hover {
-    border-bottom: 2px solid #ff7527;
+    border-bottom: 4px solid #ff7527;
     transform: scale(1.1);
   }
 `;
