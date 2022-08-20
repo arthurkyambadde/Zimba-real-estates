@@ -5,7 +5,7 @@ import HeroImage from "../assets/Images/HeroImage.jpg";
 const HeroContainer = styled.div`
   background: #eeedde;
   height: 1400px;
-  padding: 0 200px;
+  padding: 0 200px 60px 200px;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -79,11 +79,11 @@ function Hero() {
     <HeroContainer>
       <HeroSectionDetails>
         <HeroSectionHeading>
-          Temukan Hunian Keluarga Sesuai Keinginanmu
+          Find Family Homes According to Your Desires
         </HeroSectionHeading>
         <HeroSectionMainPara>
-          Menyediakan hunian bagi keluarga anda dengan varian pilihan dan lokasi
-          yang strategis di kota anda dengan cara yang lebih mudah.
+          Providing housing for your family with a choice of variants and a
+          strategic location in your city in an easier way.
         </HeroSectionMainPara>
         <div>
           <HeroSectionInput
@@ -97,19 +97,19 @@ function Hero() {
             <DetailHeading>
               200<PerformanceSign>+</PerformanceSign>
             </DetailHeading>
-            <p>Residental grup telah bergabung</p>
+            <p>Residential group has joined</p>
           </DetailContainer>
           <DetailContainer>
             <DetailHeading>
               10<PerformanceSign>+</PerformanceSign>
             </DetailHeading>
-            <p>Sudah berpengalaman </p>
+            <p>Already experienced </p>
           </DetailContainer>
           <DetailContainer>
             <DetailHeading>
               999<PerformanceSign>+</PerformanceSign>
             </DetailHeading>
-            <p>Properti tersedia di berbagai Kota</p>
+            <p>Properties available in various Cities</p>
           </DetailContainer>
         </HeroSectionPerformances>
       </HeroSectionDetails>
