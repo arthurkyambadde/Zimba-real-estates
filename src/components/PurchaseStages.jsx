@@ -14,13 +14,6 @@ const CardHeadingContainer = styled.div`
   align-items: center;
 `;
 
-const CardPosition = styled.div`
-  display: flex;
-  align-tems: center;
-  justify-content: center;
-  width: 70%;
-`;
-
 const SectionHeading = styled.h1`
   font-weight: 600;
   font-size: 56px;
@@ -33,7 +26,7 @@ const SectionCards = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 133px;
+  gap: 200px;
   margin-top: 70px;
 `;
 
@@ -61,13 +54,17 @@ const CardLabel = styled.span`
   color: #ff7527;
 `;
 
+const Container = styled.div`
+  padding: 0 150px;
+`;
+
 class PurchaseStages extends Component {
   render() {
     return (
       <SectionContainer>
         <SectionHeading>Easy and Fast Property Purchase Stages</SectionHeading>
 
-        <CardPosition>
+        <Container>
           <SectionCards>
             <div>
               <CardHeadingContainer>
@@ -103,7 +100,7 @@ class PurchaseStages extends Component {
               <ReadMore />
             </div>
           </SectionCards>
-        </CardPosition>
+        </Container>
       </SectionContainer>
     );
   }

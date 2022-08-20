@@ -53,6 +53,8 @@ const HeroSectionPerformances = styled.div`
   display: flex;
   flex-direction: row;
   gap: 72px;
+  width: 100%;
+  justify-content: center;s
 `;
 
 const DetailContainer = styled.div`
@@ -97,13 +99,13 @@ function Hero() {
             <DetailHeading>
               200<PerformanceSign>+</PerformanceSign>
             </DetailHeading>
-            <p>Residential group has joined</p>
+            <p>Residential groups that have joined</p>
           </DetailContainer>
           <DetailContainer>
             <DetailHeading>
               10<PerformanceSign>+</PerformanceSign>
             </DetailHeading>
-            <p>Already experienced </p>
+            <p>Already have had an experience </p>
           </DetailContainer>
           <DetailContainer>
             <DetailHeading>
