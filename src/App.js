@@ -2,6 +2,7 @@ import AuditorsChoice from "./components/AuditorsChoice";
 import ConsumerChoice from "./components/ConsumerChoice";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import PurchaseStages from "./components/PurchaseStages";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <PurchaseStages />
       <ConsumerChoice />
       <AuditorsChoice />
+      <Footer />
     </div>
   );
 }
