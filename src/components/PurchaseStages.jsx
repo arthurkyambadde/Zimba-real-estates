@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ReadMore from "./ReadMore";
 
 const SectionContainer = styled.div`
-  height: 672px;
+  height: 650px;
   padding: 100px 200px;
 `;
 
@@ -14,7 +14,7 @@ const CardHeadingContainer = styled.div`
   align-items: center;
 `;
 
-const SectionHeading = styled.h1`
+const SectionHeading = styled.h2`
   font-weight: 600;
   font-size: 56px;
   color: #203239;
@@ -58,6 +58,13 @@ const Container = styled.div`
   padding: 0 150px;
 `;
 
+const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+`;
+
 class PurchaseStages extends Component {
   render() {
     return (
@@ -66,39 +73,46 @@ class PurchaseStages extends Component {
 
         <Container>
           <SectionCards>
-            <div>
-              <CardHeadingContainer>
-                <CardHeading>Select Property</CardHeading>
-                <CardLabel>01</CardLabel>
-              </CardHeadingContainer>
-              <CardPara>
-                Find the desired property according to your criteria and your
-                family. You can read more about choosing a property wisely here
-              </CardPara>
+            <CardContainer>
+              <div>
+                <CardHeadingContainer>
+                  <CardHeading>Select Property</CardHeading>
+                  <CardLabel>01</CardLabel>
+                </CardHeadingContainer>
+                <CardPara>
+                  Find the desired property according to your criteria and your
+                  family. You can read more about choosing a property wisely
+                  here
+                </CardPara>
+              </div>
               <ReadMore />
-            </div>
-            <div>
-              <CardHeadingContainer>
-                <CardHeading>Process Booking</CardHeading>
-                <CardLabel>02</CardLabel>
-              </CardHeadingContainer>
-              <CardPara>
-                Payment in the form of a sum of money as a commitment to order
-                certain property units.
-              </CardPara>
+            </CardContainer>
+            <CardContainer>
+              <div>
+                <CardHeadingContainer>
+                  <CardHeading>Process Booking</CardHeading>
+                  <CardLabel>02</CardLabel>
+                </CardHeadingContainer>
+                <CardPara>
+                  Payment in the form of a sum of money as a commitment to order
+                  certain property units.
+                </CardPara>
+              </div>
               <ReadMore />
-            </div>
-            <div>
-              <CardHeadingContainer>
-                <CardHeading>Mortgage and Certification</CardHeading>
-                <CardLabel>03</CardLabel>
-              </CardHeadingContainer>
-              <CardPara>
-                Mortgage financing for home buyers with a financing scheme if
-                needed and continued with the HGB certification process.
-              </CardPara>
+            </CardContainer>
+            <CardContainer>
+              <div>
+                <CardHeadingContainer>
+                  <CardHeading>Mortgage and Certification</CardHeading>
+                  <CardLabel>03</CardLabel>
+                </CardHeadingContainer>
+                <CardPara>
+                  Mortgage financing for home buyers with a financing scheme if
+                  needed and continued with the HGB certification process.
+                </CardPara>
+              </div>
               <ReadMore />
-            </div>
+            </CardContainer>
           </SectionCards>
         </Container>
       </SectionContainer>

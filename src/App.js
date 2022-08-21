@@ -1,3 +1,4 @@
+import ConsumerChoice from "./components/ConsumerChoice";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import PurchaseStages from "./components/PurchaseStages";
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <Hero />
       <PurchaseStages />
+      <ConsumerChoice />
     </div>
   );
 }
